@@ -9,7 +9,7 @@ If you would like to contribute to the project I welcome that.
 
 In this repo you will find the source code and Open JSCad (https://openjscad.xyz/) models.
 
-The intention of this project is to build a plotter which can be quickly attached to a vertical surface, a suitable pen inserted and then the plotter can left to independently render the picture. By using a web-interface initial configuration and control of the plotter can be done with a smartphone removing the need for any user-interface on the device itself or the need for external hardware like a power support or controlling computer.
+The intention of this project is to build a plotter which can be quickly attached to a vertical surface, a suitable pen inserted and then the plotter can be left to independently render the picture. By using a web-interface initial configuration and control of the plotter can be done with a smartphone removing the need for any user-interface on the device itself or the need for a controlling computer.
 
 ## Features
 - Uses GCODE to control the plotting process. There are a number of ways to create such code but the GCODE tools built into the Inkscape application (https://inkscape.org/) are ideal.
@@ -24,12 +24,12 @@ The intention of this project is to build a plotter which can be quickly attache
 The .ino file located in the src directory is intended to be compiled and uploaded using the Arduino IDE. Follow the instructions to install the compiler for ESP8266 and then choose the appropriate configuration.
 
 ## Making the hardware
-Contained within the models directory are the Open JSCad files that define the models that comprise the plotter hardware. Open these in Open JSCad, export them as STL, load the STL in your slicer and then print them. The plotter is made from several major assemblies. The hub holds the motors, pen and the servo mounts on the reverse side. The "ears" are stabilisers that extend to enable the plotter to have 3 points of contact and not swing around the pen. These attach to the hub with super-glue. The battery holder attaches to the hub using nuts and boles, and holds the ESP8266, stepper interface boards, power supply and 2s 7.4v lipo battery. The intention is that different battery sections can be attached to the hub section, for example with a different microcontroller or battery, without having to reprint the whole thing.
+Contained within the models directory are the Open JSCad files that define the models that comprise the plotter hardware. Open these in Open JSCad, export them as STL, load the STL in your slicer and then print them. The plotter is made from several major assemblies. The hub holds the motors, pen and the servo mounts on the reverse side. The "ears" are stabilisers that extend to enable the plotter to have 3 points of contact and not swing around the pen. These attach to the hub with super-glue. The battery holder attaches to the hub using nuts and bolts, and holds the ESP8266, stepper interface boards, voltage converter and 2s 7.4v lipo battery. The intention is that different battery sections can be attached to the hub section, for example with a different microcontroller or battery, without having to reprint the whole thing.
 The pin numbers that connect the ESP8266 to the servo and stepper controllers are contained within the .ino file, change these as needed.
 
 ## Configuring the web interface
 
-Within the .ino are few places to put the SSID and password for the WiFi connections, find and change these are needed. I would definitely like to improve this aspect in the future.
+Within the .ino are few places to put the SSID and password for the WiFi connections, find and change these as needed. I would definitely like to improve this aspect in the future.
 
 ## Using the plotter
 
