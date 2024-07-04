@@ -1,7 +1,7 @@
 // -*- mode: c++ -*-
 
 /*
-Copyright (c) 2023 Barry King
+Copyright (c) 2024 Carri King
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

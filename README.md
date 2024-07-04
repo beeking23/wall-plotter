@@ -1,6 +1,6 @@
 # Wall Plotter
 
-*By Barry King and the Quantum Tech Club* 
+*By Carri King and the Quantum Tech Club* 
 
 This is a self-contained hanging plotter based around the ESP8266. Please feel free to use and modify these sources as you wish.
 Please keep in mind that this is a spare time, hobby project, it's all still rather rough around the edges.
